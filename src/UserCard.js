@@ -5,7 +5,7 @@ export default function UserCard(props) {
     return (
         <div>
             
-            <img scr={props.myUser[0].avatar} alt='' width="210" height="210"/>
+            <img src={props.myUser[0].avatar} alt={props.myUser[0].name}/>
             <h1>{props.myUser[0].name}</h1>
             <p><strong>Location:</strong> {props.myUser[0].location}</p>
             <p><strong>FoodType:</strong> {props.myUser[0].foodType}</p>
@@ -14,7 +14,7 @@ export default function UserCard(props) {
             <p><strong>Twitter:</strong> <a href={`https://twitter.com/@${props.myUser[0].twitterUsername}`}>@{props.myUser[0].twitterUsername}</a></p>
 
 
-            <img scr={props.myUser[1].avatar} alt={props.myUser[1].name} width="210" height="210"/>
+            <img src={props.myUser[1].avatar} alt={props.myUser[1].name}/>
             <h1>{props.myUser[1].name}</h1>
             <p><strong>Location:</strong> {props.myUser[1].location}</p>
             <p><strong>FoodType:</strong> {props.myUser[1].foodType}</p>
